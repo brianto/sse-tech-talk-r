@@ -1,11 +1,23 @@
 \documentclass{beamer}
 
 \title{R}
+\author{Brian To}
+\institute[RIT]{Society of Software Engineers}
+
+\usepackage{hyperref}
+
+\usetheme{Rochester}
 
 \begin{document}
+  \SweaveOpts{concordance=TRUE}
+  \maketitle
 
-<<echo=FALSE>>=
-  2 + 2
-@
+\begin{frame}{Links and Stories}
+  \begin{itemize}
+    \item \url{http://cran.r-project.org/bin/windows/base/}
+    \item \texttt{sudo apt-get install r-base}
+    \item \url{http://rstudio.org/}
+  \end{itemize}
+\end{frame}
 
 \end{document}

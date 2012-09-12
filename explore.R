@@ -33,3 +33,11 @@ lapply(length.by.methods, summary)
 # Plot boxplots of the two groups side-by-side
 boxplot(length.by.methods, horizontal=TRUE)
 
+# 2-Sample t Test to compare samples (ignore normality)
+with(length.by.methods, t.test(with, without))
+
+# Plot SLOC against name length
+with(spring, plot(name.length, lines))
+
+# Correlate SLOC with name length
+with(spring, cor(name.length, lines))

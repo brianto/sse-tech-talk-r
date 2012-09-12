@@ -4,7 +4,6 @@
 \author{Brian To}
 \institute[RIT]{Society of Software Engineers}
 
-\usepackage{graphicx}
 \usepackage{hyperref}
 
 \usetheme{Rochester}
@@ -12,8 +11,6 @@
 \begin{document}
   \SweaveOpts{concordance=TRUE}
   \maketitle
-
-\section{Housekeeping}
 
 \begin{frame}{Links and Stories}
   \begin{itemize}
@@ -23,9 +20,7 @@
   \end{itemize}
 \end{frame}
 
-\section{Case Study}
-
-\begin{frame}{An Enterprisey Example}
+\begin{frame}{Case Study: An Enterprisey Example}
 
 \begin{columns}[c]
   \column{1.5in}
@@ -39,6 +34,49 @@
     \item Is there a relation between lines-of-code and name length?
   \end{itemize}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Case Study: An Enterprisey Example Continued}
+  \begin{center}
+    \includegraphics[width=2.5in,height=2.8in]{bad-time.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{R the Language}
+\begin{itemize}
+  \item Writing functions
+  \item Functional programming tools
+  \item S3 and S4 Objects
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cool things with R}
+\begin{itemize}
+  \item Sweave
+  \item Rook
+  \item ggplot2
+  \item Native C Extensions
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Sweave}
+So back to our Springs...
+
+<<echo=TRUE>>=
+spring <- read.csv('spring-data.csv')
+
+summary(spring$name.length)
+@
+\end{frame}
+
+\begin{frame}[fragile]{Sweave}
+<<echo=FALSE,fig=TRUE,width=5,height=3>>=
+spring <- read.csv('spring-data.csv')
+
+hist(spring$name.length,
+  main='Spring class name length',
+  xlab='Character count')
+@
 \end{frame}
 
 \end{document}

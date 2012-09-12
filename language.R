@@ -42,26 +42,26 @@ hook(list(
   cheese=1))
 
 # S4 Object Model
-setClass("person",
-
+setClass("string.builder",
   representation(
-    name="character",
-    age="numeric"),
+    parts="character"))
 
-  prototype(
-    name="john doe",
-    age=-1))
-
-# OMG OMG HOW WORK?
-age <- function(self) self
-setReplaceMethod("age", "person", function(self) {
-  self@age <- self@age + 1
-  
+setGeneric('add<-', function(self, value) standardGeneric('add<-'))
+setReplaceMethod('add', 'string.builder', function(self, value) {
+  self@parts <- c(self@parts, value)
   self
 })
 
-new("person")
-new("person", name="Brian To", age=20)
+setGeneric('build', function(self) standardGeneric('build'))
+setMethod('build', 'string.builder', function(self) {
+  paste(self@parts, collapse=' ')
+})
 
-p <- new("person")
-p@name
+s <- new('string.builder')
+
+add(s) <- 'hey, i just met you'
+add(s) <- 'and this is crazy,'
+add(s) <- 'but here\'s my number,'
+add(s) <- 'so call me maybe?'
+
+build(s)

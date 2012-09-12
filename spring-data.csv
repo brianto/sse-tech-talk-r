@@ -622,7 +622,7 @@ AspectJTypeFilterTests,55,10,org.springframework.core.type,22
 AspectJTypeFilterTests.SomeClass,1,0,org.springframework.core.type,40
 AspectJTypeFilterTests.SomeClassAnnotatedWithComponent,1,0,org.springframework.core.type,62
 AspectJTypeFilterTests.SomeClassExtendingSomeClass,1,0,org.springframework.core.type,58
-AspectJTypeFilterTests.SomeClassExtendingSomeClassExtendingSomeClassAndImplemnentingSomeInterfac,e1,0,org.springframework.core.type,104
+AspectJTypeFilterTests.SomeClassExtendingSomeClassExtendingSomeClassAndImplemnentingSomeInterface,1,0,org.springframework.core.type,104
 AspectJTypeFilterTests.SomeClassImplementingSomeInterface,1,0,org.springframework.core.type,65
 AspectJTypeFilterTests.SomeInterface,1,0,org.springframework.core.type,44
 AssignableTypeFilterTests,37,4,org.springframework.core.type,25

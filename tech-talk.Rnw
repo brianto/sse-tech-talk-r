@@ -1,9 +1,10 @@
 \documentclass{beamer}
 
-\title{R}
+\title{Data Analytics with R}
 \author{Brian To}
 \institute[RIT]{Society of Software Engineers}
 
+\usepackage{graphicx}
 \usepackage{hyperref}
 
 \usetheme{Rochester}
@@ -12,12 +13,32 @@
   \SweaveOpts{concordance=TRUE}
   \maketitle
 
+\section{Housekeeping}
+
 \begin{frame}{Links and Stories}
   \begin{itemize}
     \item \url{http://cran.r-project.org/bin/windows/base/}
     \item \texttt{sudo apt-get install r-base}
     \item \url{http://rstudio.org/}
   \end{itemize}
+\end{frame}
+
+\section{Case Study}
+
+\begin{frame}{An Enterprisey Example}
+
+\begin{columns}[c]
+  \column{1.5in}
+  \includegraphics[height=2in,width=1.5in]{factory-bean.jpg}
+
+  \column{2.5in}
+  \begin{itemize}
+    \item How long are typical class names?
+    \item What does the distribution look like?
+    \item Do classes with no methods have different name lengths than those that do?
+    \item Is there a relation between lines-of-code and name length?
+  \end{itemize}
+\end{columns}
 \end{frame}
 
 \end{document}

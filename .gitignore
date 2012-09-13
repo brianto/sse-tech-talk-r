@@ -15,3 +15,5 @@ tech-talk.vrb
 Rplots.pdf
 tech-talk-*.eps
 tech-talk-*.pdf
+native.o
+native.so

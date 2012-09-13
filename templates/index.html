@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>R Server with Rook</title>
+  </head>
+  
+  <body>
+    <img src="<%= helper$to_url('/boxplot.png') %>" />
+    
+    <ul>
+      <% for (entry in items) { %>
+        <li><%= entry$title %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>

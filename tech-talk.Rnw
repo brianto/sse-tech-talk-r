@@ -62,7 +62,7 @@
 \begin{frame}[fragile]{Sweave}
 So back to our Springs...
 
-<<echo=TRUE>>=
+<<summary>>=
 spring <- read.csv('spring-data.csv')
 
 summary(spring$name.length)
@@ -70,7 +70,7 @@ summary(spring$name.length)
 \end{frame}
 
 \begin{frame}[fragile]{Sweave}
-<<echo=FALSE,fig=TRUE,width=5,height=3>>=
+<<histogram,echo=FALSE,fig=TRUE,width=5,height=3>>=
 spring <- read.csv('spring-data.csv')
 
 hist(spring$name.length,

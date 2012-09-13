@@ -41,7 +41,9 @@ s$add(
         png(filename=file.path(tempdir(), 'boxplot.png'),
             height=240, width=320)
         
-        hist(comments)
+        boxplot(comments,
+          horizontal=TRUE,
+          main='Distribution of HN Comments per Story')
         
         dev.off()
         
